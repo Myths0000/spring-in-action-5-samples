@@ -17,9 +17,9 @@
 	<description>Taco Cloud UI</description>
 
   <properties>
-      <node.version>v6.9.1</node.version>
+      <node.version>v16.5.0</node.version>
       <yarn.version>v0.24.6</yarn.version>
-      <frontend-maven-plugin.version>1.4</frontend-maven-plugin.version>
+      <frontend-maven-plugin.version>1.6</frontend-maven-plugin.version>
       <environment>dev</environment>
   </properties>
 
@@ -61,6 +61,10 @@
             <configuration>
               <nodeVersion>${node.version}</nodeVersion>
               <npmVersion>${npm.version}</npmVersion>
+			  <nodeDownloadRoot>https://npm.taobao.org/mirrors/node/</nodeDownloadRoot>
+<!--			  <npmDownloadRoot>https://registry.npm.taobao.org/npm/-/</npmDownloadRoot> -->
+			  <npmDownloadRoot>http://registry.npmjs.org/npm/-/</npmDownloadRoot>
+			  
             </configuration>
           </execution>
           <execution>
@@ -70,6 +74,7 @@
             </goals>
             <configuration>
               <arguments>install</arguments>
+			  <nodeDownloadRoot>https://registry.npm.taobao.org</nodeDownloadRoot>
             </configuration>
           </execution>
           <execution>

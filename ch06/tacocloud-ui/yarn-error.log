@@ -1,0 +1,89 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Myths\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add fronted-maven-plugin
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\dotnet\;C:\Program Files (x86)\NetSarang\Xshell 7\;C:\Program Files (x86)\NetSarang\Xftp 7\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseSVN\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files\nodejs\;C:\Users\Myths\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_291\bin\;C:\Program Files\Apache\apache-maven-3.5.0\bin\;C:\Program Files\MySQL\MySQL Server 8.0\bin\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Myths\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Myths\AppData\Local\Programs\Python\Python39\;C:\Users\Myths\AppData\Local\GitHubDesktop\bin;C:\Users\Myths\AppData\Local\atom\bin;C:\Users\Myths\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Myths\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  16.5.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/fronted-maven-plugin: Not found
+      at Request.params.callback [as _callback] (C:\Users\Myths\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66992:18)
+      at Request.self.callback (C:\Users\Myths\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140763:22)
+      at Request.emit (node:events:394:28)
+      at Request.<anonymous> (C:\Users\Myths\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141735:10)
+      at Request.emit (node:events:394:28)
+      at IncomingMessage.<anonymous> (C:\Users\Myths\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141657:12)
+      at Object.onceWrapper (node:events:513:28)
+      at IncomingMessage.emit (node:events:406:35)
+      at endReadableNT (node:internal/streams/readable:1331:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "web-ui",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+      "start": "ng serve --proxy-config proxy-config.json",
+      "build": "ng build --dev",
+      "prod": "ng build --prod",
+      "lint": "tslint \"src/**/*.ts\"",
+      "test": "ng test",
+      "pree2e": "webdriver-manager update",
+      "e2e": "protractor"
+    },
+    "private": true,
+    "dependencies": {
+      "@angular/animations": "^5.0.0",
+      "@angular/common": "^5.0.0",
+      "@angular/compiler": "^5.0.0",
+      "@angular/core": "^5.0.0",
+      "@angular/forms": "^5.0.0",
+      "@angular/http": "^5.0.0",
+      "@angular/platform-browser": "^5.0.0",
+      "@angular/platform-browser-dynamic": "^5.0.0",
+      "@angular/router": "^5.0.0",
+      "angular-oauth2-oidc": "^3.0.3",
+      "core-js": "^2.4.1",
+      "rxjs": "^5.5.2",
+      "zone.js": "^0.8.14"
+    },
+    "devDependencies": {
+      "@angular/cli": "1.7.4",
+      "@angular/compiler-cli": "^5.0.0",
+      "@angular/language-service": "^5.0.0",
+      "@types/jasmine": "~2.5.53",
+      "@types/jasminewd2": "~2.0.2",
+      "@types/node": "~6.0.60",
+      "codelyzer": "~3.2.0",
+      "jasmine-core": "~2.6.2",
+      "jasmine-spec-reporter": "~4.1.0",
+      "karma": "~1.7.0",
+      "karma-chrome-launcher": "~2.1.1",
+      "karma-cli": "~1.0.1",
+      "karma-coverage-istanbul-reporter": "^1.2.1",
+      "karma-jasmine": "~1.1.0",
+      "karma-jasmine-html-reporter": "^0.2.2",
+      "protractor": "~5.1.2",
+      "ts-node": "~3.2.0",
+      "tslint": "~5.7.0",
+      "typescript": "~2.4.2"
+    },
+    "description": "first yarn init",
+    "main": "index.js",
+    "author": "Scott"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
